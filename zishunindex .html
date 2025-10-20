@@ -23,29 +23,24 @@
         padding: 2rem 0;
     }
 
-    /* --- 这是核心修改区域 --- */
+   
     header .container {
-        display: flex; /* 启用Flexbox布局 */
-        align-items: center; /* 垂直居中对齐项目 */
+        display: flex; 
+        align-items: center; 
         justify-content: center; 
-        flex-wrap: wrap; /* 在小屏幕上允许换行 */
+        flex-wrap: wrap; 
     }
     .profile-photo {
-        width: 240px; /* 您可以调整宽度 */
-        height: auto; /* 高度自适应，保持图片比例 */
-        /* 以下是取消圆框限制 */
-        /* border-radius: 50%; */ /* 移除此行 */
-        /* border: 5px solid #fff; */ /* 移除此行 */
-        /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */ /* 移除此行或根据需要修改 */
-        margin-left: 0px; /* 在照片左侧添加间距 */
-        flex-shrink: 0; /* 防止照片在空间不足时缩小 */
+        width: 240px; 
+        height: auto; 
+        margin-left: 0px; 
+        flex-shrink: 0; 
     }
     .profile-text {
-        text-align: center; /* 文字居中 */
-        flex-grow: 1; /* 允许文字区域占据剩余空间 */
-        min-width: 280px; /* 确保文字区域在小屏幕下有最小宽度 */
+        text-align: center; 
+        flex-grow: 1; 
+        min-width: 280px; 
     }
-    /* --- 修改区域结束 --- */
 
     header h1 {
         margin: 0 0 5px;
@@ -106,19 +101,19 @@
         color: #fff;
     }
 
-    /* 响应式调整：当屏幕宽度较小时，照片会换行到文字下方并居中 */
+
     @media (max-width: 600px) {
         header .container {
-            flex-direction: column; /* 垂直堆叠 */
-            justify-content: center; /* 居中对齐 */
+            flex-direction: column; 
+            justify-content: center; 
         }
         .profile-photo {
-            margin: 20px 0 0 0; /* 调整上下间距 */
-            order: 2; /* 确保照片在文字下方 */
+            margin: 20px 0 0 0; 
+            order: 2; 
         }
         .profile-text {
-            order: 1; /* 确保文字在照片上方 */
-            text-align: center; /* 文字居中 */
+            order: 1; 
+            text-align: center; 
         }
     }
 
@@ -275,4 +270,5 @@ L. Ma, <strong>Z. Liu</strong>, H. Yu and Y. Chen, <em>IEEE Control Systems Lett
     </footer>
 
 </body>
+
 </html>
